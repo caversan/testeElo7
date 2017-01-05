@@ -14,6 +14,6 @@ Qualquer dúvida maior, pergunte-nos. No geral, divirta-se!
 Crie um projeto para recriar a seguinte página:
 
 
-![Vagas](https://s3.amazonaws.com/data.elo7.com.br/candidatos/front-end/vagas.png "Vagas")
+![Vagas](https://s3.amazonaws.com/files.elo7.com.br/candidatos/front-end/vagas.png "Vagas")
 
-Todos os arquivos necessários para o teste podem ser baixados [aqui](https://s3.amazonaws.com/data.elo7.com.br/candidatos/front-end/teste.zip)
+Todos os arquivos necessários para o teste podem ser baixados [aqui](https://s3.amazonaws.com/files.elo7.com.br/candidatos/front-end/teste.zip)
