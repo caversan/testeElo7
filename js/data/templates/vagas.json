@@ -1,8 +1,7 @@
 {
-    "lista":
-    {
+    "lista": {
         "imagem": "foto-bottom.png",
         "titulo": "VAGAS EM ABERTO",
-        "listasrc": "../data/vagas.json"
+        "listasrc": "../api/vagas.json"
     }
 }
