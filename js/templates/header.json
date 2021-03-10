@@ -1,59 +1,13 @@
 {
-    "vagas": [
+    "header":
+    {
+        "imagem": "foto-header.png",
+        "titulo": "Trabalhe no Elo7",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ac diam dictum tempor ac a ante. Sed placerat, leo sed sodales consequat, dui est aliquam velit, vitae luctus erat arcu sit amet neque. Donec.",
+        "mais": 
         {
-            "cargo": "Desenvolvedor Mobile Senior (Android e iOS)",
-            "ativa": true,
-            "link": "http://elo7.dev/vaga/desenvolvedor-mobile-senior",
-            "localizacao": {
-                "bairro": "Vila Olímpia",
-                "cidade": "São Paulo",
-                "pais": "Brasil"
-            }
-        },
-        {
-            "cargo": "Desenvolvedor Mobile Junior (Android)",
-            "ativa": false,
-            "link": "http://elo7.dev/vaga/desenvolvedor-mobile-junior",
-            "localizacao": {
-                "bairro": "Vila Olímpia",
-                "cidade": "São Paulo",
-                "pais": "Brasil"
-            }
-        },
-        {
-            "cargo": "Desenvolvedor Java Senior",
-            "ativa": true,
-            "link": "http://elo7.dev/vaga/desenvolvedor-java-senior",
-            "localizacao": {
-                "bairro": "Vila Olímpia",
-                "cidade": "São Paulo",
-                "pais": "Brasil"
-            }
-        },
-        {
-            "cargo": "Desenvolvedor Front end",
-            "ativa": true,
-            "link": "http://elo7.dev/vaga/desenvolvedor-front-end",
-            "localizacao": {
-                "bairro": "Vila Olímpia",
-                "cidade": "São Paulo",
-                "pais": "Brasil"
-            }
-        },
-        {
-            "cargo": "Desenvolvedor Java Junior",
-            "ativa": false,
-            "link": "http://elo7.dev/vaga/desenvolvedor-java-jr",
-            "localizacao": {
-                "bairro": "Vila Olímpia",
-                "cidade": "São Paulo",
-                "pais": "Brasil"
-            }
-        },
-        {
-            "cargo": "Desenvolvedor Java Junior",
-            "ativa": true,
-            "link": "http://elo7.dev/vaga/desenvolvedor-java-jr"
+            "linkname": "VAGAS EM ABERTO",
+            "link": "#vagas"
         }
-    ]
+    }
 }

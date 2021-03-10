@@ -1,0 +1,12 @@
+{
+    "galeria":
+        {
+            "titulo": "CONHEÇA NOSSO TIME FORA DE SÉRIE",
+            "imagens": [
+                {"src": "beatriz.png"},
+                {"src": "camila.png"},
+                {"src": "david.png"},
+                {"src": "guto.png"}
+            ]
+        }
+}
