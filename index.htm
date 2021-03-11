@@ -4,14 +4,25 @@
 <head>
     <script type="text/javascript">
         // css no cache
-        document.write('<link href="css/style.css?' + Math.floor(Math.random() * 1000000) + '" rel="stylesheet"\ />');
+        var cssLoader = document.createElement('link');
+        cssLoader.rel = 'stylesheet';
+        cssLoader.href = 'css/style.css?t=' + Math.floor(Math.random() * 1000000);
+        document.head.appendChild(cssLoader);
     </script>
 </head>
 
 <body>
-
+    <header></header>
+    <div class="video"></div>
+    <div class="time"></div>
+    <div class="sobrenos"></div>
+    <div class="vagas"></div>
+    <div class="api_vagas"></div>
 </body>
 <script type="text/javascript ">
     //js no cache
-    document.write('<script src="js/scripts/vagas.js? ' + Math.floor(Math.random() * 1000000) + ' "><\/script>');
+    var scriptLoader = document.createElement('script');
+    scriptLoader.type = 'text/javascript';
+    scriptLoader.src = 'js/scripts/pagina.js?t=' + Math.floor(Math.random() * 1000000);
+    document.body.appendChild(scriptLoader);
 </script>

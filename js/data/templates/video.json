@@ -1,7 +1,6 @@
 {
-    "video":
-    {
-        "video": "placeholder-video.png",
+    "video": {
+        "src": "placeholder-video.png",
         "titulo": "PALAVRA DO CEO",
         "subtitulo": "Carlos Curioni",
         "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ac diam dictum tempor ac a ante. Sed placerat, leo sed sodales consequat, dui est aliquam velit, vitae luctus erat arcu sit amet neque. Donec."

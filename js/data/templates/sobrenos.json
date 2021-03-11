@@ -1,7 +1,5 @@
 {
-    "galeriatexto":
-    [
-        {
+    "galeriatexto": [{
             "ico": "qualidade.png",
             "titulo": "",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ac diam dictum tempor ac a ante."
@@ -17,9 +15,8 @@
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui ac diam dictum tempor ac a ante. Sed placerat, leo sed sodales consequat, dui est aliquam velit."
         }
     ],
-    "mais":
-    {
+    "mais": {
         "linkname": "SAIBA MAIS",
-        "link": "#",
+        "link": "#"
     }
 }
