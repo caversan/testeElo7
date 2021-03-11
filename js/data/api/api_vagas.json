@@ -1,61 +1,121 @@
 {
     "grupos": [{
-        "nome": "DESENVOLVIMENTO",
-        "vagas": [{
-                "cargo": "Desenvolvedor Mobile Senior (Android e iOS)",
-                "ativa": true,
-                "link": "http://elo7.dev/vaga/desenvolvedor-mobile-senior",
-                "localizacao": {
-                    "bairro": "Vila Olímpia",
-                    "cidade": "São Paulo",
-                    "pais": "Brasil"
+            "nome": "DESENVOLVIMENTO",
+            "vagas": [{
+                    "cargo": "Desenvolvedor Mobile Senior (Android e iOS)",
+                    "ativa": true,
+                    "link": "http://elo7.dev/vaga/desenvolvedor-mobile-senior",
+                    "localizacao": {
+                        "bairro": "",
+                        "cidade": "São Paulo",
+                        "pais": "Brasil"
+                    }
+                },
+                {
+                    "cargo": "Desenvolvedor Mobile Junior (Android)",
+                    "ativa": false,
+                    "link": "http://elo7.dev/vaga/desenvolvedor-mobile-junior",
+                    "localizacao": {
+                        "bairro": "Vila Olímpia",
+                        "cidade": "São Paulo",
+                        "pais": "Brasil"
+                    }
+                },
+                {
+                    "cargo": "Desenvolvedor Java Senior",
+                    "ativa": true,
+                    "link": "http://elo7.dev/vaga/desenvolvedor-java-senior",
+                    "localizacao": {
+                        "bairro": "Vila Olímpia",
+                        "cidade": "",
+                        "pais": "Brasil"
+                    }
+                },
+                {
+                    "cargo": "Desenvolvedor Front end",
+                    "ativa": true,
+                    "link": "http://elo7.dev/vaga/desenvolvedor-front-end",
+                    "localizacao": {
+                        "bairro": "Vila Olímpia",
+                        "cidade": "São Paulo",
+                        "pais": ""
+                    }
+                },
+                {
+                    "cargo": "Desenvolvedor Java Junior",
+                    "ativa": false,
+                    "link": "http://elo7.dev/vaga/desenvolvedor-java-jr",
+                    "localizacao": {
+                        "bairro": "Vila Olímpia",
+                        "cidade": "São Paulo",
+                        "pais": "Brasil"
+                    }
+                },
+                {
+                    "cargo": "Desenvolvedor Java Junior",
+                    "ativa": true,
+                    "link": "http://elo7.dev/vaga/desenvolvedor-java-jr"
                 }
-            },
-            {
-                "cargo": "Desenvolvedor Mobile Junior (Android)",
-                "ativa": false,
-                "link": "http://elo7.dev/vaga/desenvolvedor-mobile-junior",
-                "localizacao": {
-                    "bairro": "Vila Olímpia",
-                    "cidade": "São Paulo",
-                    "pais": "Brasil"
+            ]
+        },
+        {
+            "nome": "CRIAÇÃO",
+            "vagas": [{
+                    "cargo": "criacao Mobile Senior (Android e iOS)",
+                    "ativa": true,
+                    "link": "http://elo7.dev/vaga/criacao-mobile-senior",
+                    "localizacao": {
+                        "bairro": "",
+                        "cidade": "",
+                        "pais": "Brasil"
+                    }
+                },
+                {
+                    "cargo": "criacao Mobile Junior (Android)",
+                    "ativa": false,
+                    "link": "http://elo7.dev/vaga/criacao-mobile-junior",
+                    "localizacao": {
+                        "bairro": "Vila Olímpia",
+                        "cidade": "",
+                        "pais": ""
+                    }
+                },
+                {
+                    "cargo": "criacao Java Senior",
+                    "ativa": true,
+                    "link": "http://elo7.dev/vaga/criacao-java-senior",
+                    "localizacao": {
+                        "bairro": "Vila Olímpia",
+                        "cidade": "",
+                        "pais": ""
+                    }
+                },
+                {
+                    "cargo": "criacao Front end",
+                    "ativa": true,
+                    "link": "http://elo7.dev/vaga/criacao-front-end",
+                    "localizacao": {
+                        "bairro": "Vila Olímpia",
+                        "cidade": "São Paulo",
+                        "pais": "Brasil"
+                    }
+                },
+                {
+                    "cargo": "criacao Java Junior",
+                    "ativa": false,
+                    "link": "http://elo7.dev/vaga/criacao-java-jr",
+                    "localizacao": {
+                        "bairro": "Vila Olímpia",
+                        "cidade": "São Paulo",
+                        "pais": "Brasil"
+                    }
+                },
+                {
+                    "cargo": "criacao Java Junior",
+                    "ativa": true,
+                    "link": "http://elo7.dev/vaga/criacao-java-jr"
                 }
-            },
-            {
-                "cargo": "Desenvolvedor Java Senior",
-                "ativa": true,
-                "link": "http://elo7.dev/vaga/desenvolvedor-java-senior",
-                "localizacao": {
-                    "bairro": "Vila Olímpia",
-                    "cidade": "São Paulo",
-                    "pais": "Brasil"
-                }
-            },
-            {
-                "cargo": "Desenvolvedor Front end",
-                "ativa": true,
-                "link": "http://elo7.dev/vaga/desenvolvedor-front-end",
-                "localizacao": {
-                    "bairro": "Vila Olímpia",
-                    "cidade": "São Paulo",
-                    "pais": "Brasil"
-                }
-            },
-            {
-                "cargo": "Desenvolvedor Java Junior",
-                "ativa": false,
-                "link": "http://elo7.dev/vaga/desenvolvedor-java-jr",
-                "localizacao": {
-                    "bairro": "Vila Olímpia",
-                    "cidade": "São Paulo",
-                    "pais": "Brasil"
-                }
-            },
-            {
-                "cargo": "Desenvolvedor Java Junior",
-                "ativa": true,
-                "link": "http://elo7.dev/vaga/desenvolvedor-java-jr"
-            }
-        ]
-    }]
+            ]
+        }
+    ]
 }

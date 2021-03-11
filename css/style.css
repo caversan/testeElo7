@@ -1,22 +1,22 @@
-.mainContainer {
+.main {
     top: 0px;
     margin: 0px;
     width: 100%;
     height: 100%;
 }
 
-.containerHeader {
+.header {
     position: relative;
 }
 
-.headerImage {
+.banner {
     position: absolute;
 }
 
-.headerTitle {
+.pagetitle {
     position: absolute;
 }
 
-.headerDescripition {
+.description {
     position: absolute;
 }
