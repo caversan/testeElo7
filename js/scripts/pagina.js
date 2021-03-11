@@ -54,11 +54,11 @@ try {
     }
 
     function contentHeader(data, content) {
-        document.getElementsByTagName('header')[0].innerHTML = '<img src="img/' + data.header.imagem + '"\/>';
-        document.getElementsByTagName('header')[0].innerHTML += data.header.titulo;
-        document.getElementsByTagName('header')[0].innerHTML += data.header.descricao;
-        document.getElementsByTagName('header')[0].innerHTML += data.header.mais.link;
-        document.getElementsByTagName('header')[0].innerHTML += data.header.mais.linkname;
+        document.getElementsByClassName('containerHeader')[0].getElementsByClassName('headerImage')[0].innerHTML = '<img src="img/' + data.header.imagem + '"\/>';
+        document.getElementsByClassName('containerHeader')[0].getElementsByClassName('headerTitle')[0].innerHTML += data.header.titulo;
+        document.getElementsByClassName('mainContainer')[0].getElementsByClassName('headerDescription')[0].innerHTML += data.header.descricao;
+        document.getElementsByClassName('header')[0].innerHTML += data.header.mais.link;
+        document.getElementsByClassName('header')[0].innerHTML += data.header.mais.linkname;
     }
 
     function contentVideo(data, content) {
