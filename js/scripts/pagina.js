@@ -55,7 +55,7 @@ try {
     }
 
     function contentHeader(data) {
-        document.getElementsByClassName('header')[0].getElementsByClassName('banner')[0].innerHTML += '<img src="img/' + data.header.imagem + '"\/>';
+        document.getElementsByClassName('header')[0].getElementsByClassName('banner')[0].innerHTML += '<img width="100%" src="img/' + data.header.imagem + '"\/>';
         document.getElementsByClassName('header')[0].getElementsByClassName('banner')[0].getElementsByClassName('pagetitle')[0].innerHTML += data.header.titulo;
         document.getElementsByClassName('header')[0].getElementsByClassName('description')[0].innerHTML += data.header.descricao;
         document.getElementsByClassName('header')[0].getElementsByClassName('more')[0].innerHTML += data.header.mais.link;
@@ -73,7 +73,7 @@ try {
         document.getElementsByClassName('team')[0].getElementsByClassName('title')[0].innerHTML = data.galeria.titulo;
         for (i in data.galeria.imagens) {
             var teampic = document.createElement('div');
-            teampic.className = 'teampic';
+            teampic.className = 'teampic fourcol';
             document.getElementsByClassName('team')[0].getElementsByClassName('gallery')[0].appendChild(teampic);
             document.getElementsByClassName('team')[0].getElementsByClassName('gallery')[0].getElementsByClassName('teampic')[i].innerHTML += '<img src="img/' + data.galeria.imagens[i].src + '"\/>';
         }
@@ -83,7 +83,7 @@ try {
         for (i in data.galeriatexto) {
 
             var imagecontainer = document.createElement('div');
-            imagecontainer.className = 'imagecontainer';
+            imagecontainer.className = 'imagecontainer threecol';
             document.getElementsByClassName('aboutus')[0].getElementsByClassName('txtgallery')[0].appendChild(imagecontainer);
 
             var picture = document.createElement('div');

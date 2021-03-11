@@ -1,3 +1,16 @@
+body {
+    background: white;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.3;
+}
+
+img {
+    width: 100%;
+}
+
 .main {
     top: 0px;
     margin: 0px;
@@ -5,21 +18,90 @@
     height: 100%;
 }
 
+.twocol {
+    width: 50%;
+    padding: 2%;
+}
 
-/*
+.threecol {
+    width: 33%;
+    padding: 2%;
+}
+
+.fourcol {
+    width: 25%;
+    padding: 2%;
+}
+
 .header {
-    position: relative;
+    text-align: center;
 }
 
 .banner {
-    position: absolute;
+    position: relative;
 }
 
 .pagetitle {
     position: absolute;
+    margin: 0px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
-.description {
-    position: absolute;
+.videocontainer {
+    background-color: #f8f8f8;
+    display: flex;
 }
-*/
+
+.team {
+    background-color: #f8f8f8;
+}
+
+.team .title {
+    text-align: center;
+}
+
+.team .gallery {
+    display: flex;
+}
+
+.txtgallery {
+    display: flex;
+}
+
+.api_vagas .title {
+    text-align: center;
+}
+
+.api_vagas .grouplist .title {
+    text-align: left;
+}
+
+.listitem {
+    display: flex;
+}
+
+.listitem .position {
+    width: 50%;
+}
+
+.listitem .location {
+    width: 50%;
+    text-align: right;
+}
+
+@media screen and (min-width: 1380px) {
+    .margincontent {
+        padding: 0px 10%;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .margincontent {
+        padding: 0px 5%;
+    }
+}
+
+@media screen and (max-width: 790px) {}
