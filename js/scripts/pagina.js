@@ -18,7 +18,6 @@ try {
         loadedJson.onreadystatechange = function() {
             if (this.readyState === 4) {
                 if (this.status >= 200 && this.status < 400) {
-                    console.log(folder + type)
                     loadContent(JSON.parse(this.responseText), type);
                 } else {
                     // Error :(
@@ -56,8 +55,8 @@ try {
     }
 
     function contentHeader(data) {
-        document.getElementsByClassName('header')[0].getElementsByClassName('banner')[0].innerHTML = '<img src="img/' + data.header.imagem + '"\/>';
-        document.getElementsByClassName('header')[0].getElementsByClassName('pagetitle')[0].innerHTML += data.header.titulo;
+        document.getElementsByClassName('header')[0].getElementsByClassName('banner')[0].innerHTML += '<img src="img/' + data.header.imagem + '"\/>';
+        document.getElementsByClassName('header')[0].getElementsByClassName('banner')[0].getElementsByClassName('pagetitle')[0].innerHTML += data.header.titulo;
         document.getElementsByClassName('header')[0].getElementsByClassName('description')[0].innerHTML += data.header.descricao;
         document.getElementsByClassName('header')[0].getElementsByClassName('more')[0].innerHTML += data.header.mais.link;
         document.getElementsByClassName('header')[0].getElementsByClassName('more')[0].innerHTML += data.header.mais.linkname;
