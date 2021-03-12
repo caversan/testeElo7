@@ -61,7 +61,7 @@
         {
             "nome": "CRIAÇÃO",
             "vagas": [{
-                    "cargo": "criacao Mobile Senior (Android e iOS)",
+                    "cargo": "Criação Mobile Senior (Android e iOS)",
                     "ativa": true,
                     "link": "http://elo7.dev/vaga/criacao-mobile-senior",
                     "localizacao": {
@@ -71,7 +71,7 @@
                     }
                 },
                 {
-                    "cargo": "criacao Mobile Junior (Android)",
+                    "cargo": "Criação Mobile Junior (Android)",
                     "ativa": false,
                     "link": "http://elo7.dev/vaga/criacao-mobile-junior",
                     "localizacao": {
@@ -81,7 +81,7 @@
                     }
                 },
                 {
-                    "cargo": "criacao Java Senior",
+                    "cargo": "Criação Java Senior",
                     "ativa": true,
                     "link": "http://elo7.dev/vaga/criacao-java-senior",
                     "localizacao": {
@@ -91,7 +91,7 @@
                     }
                 },
                 {
-                    "cargo": "criacao Front end",
+                    "cargo": "Criação Front end",
                     "ativa": true,
                     "link": "http://elo7.dev/vaga/criacao-front-end",
                     "localizacao": {
@@ -101,7 +101,7 @@
                     }
                 },
                 {
-                    "cargo": "criacao Java Junior",
+                    "cargo": "Criação Java Junior",
                     "ativa": false,
                     "link": "http://elo7.dev/vaga/criacao-java-jr",
                     "localizacao": {
@@ -111,7 +111,7 @@
                     }
                 },
                 {
-                    "cargo": "criacao Java Junior",
+                    "cargo": "Criação Java Junior",
                     "ativa": true,
                     "link": "http://elo7.dev/vaga/criacao-java-jr"
                 }

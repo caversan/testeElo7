@@ -1,14 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,600;0,700;1,600&display=swap');
 body {
     background: white;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-family: Cabin, Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #7d7d7d;
     margin: 0px;
     padding: 0px;
-    line-height: 1.3;
+    hyphens: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #359c9c;
 }
 
 img {
     width: 100%;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 15px;
+    width: 220px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #f9a90e;
+    padding-bottom: 25px;
+}
+
+.more {
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 15px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid #7d7d7d;
+    padding: 15px;
 }
 
 .main {
@@ -16,21 +51,22 @@ img {
     margin: 0px;
     width: 100%;
     height: 100%;
+    padding-bottom: 50px;
 }
 
 .twocol {
     width: 50%;
-    padding: 2%;
+    padding: 35px 5px;
 }
 
 .threecol {
     width: 33%;
-    padding: 2%;
+    padding: 35px 5px;
 }
 
 .fourcol {
     width: 25%;
-    padding: 2%;
+    padding: 35px 5px;
 }
 
 .header {
@@ -39,6 +75,11 @@ img {
 
 .banner {
     position: relative;
+}
+
+.header .description {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .pagetitle {
@@ -55,12 +96,16 @@ img {
     display: flex;
 }
 
-.team {
-    background-color: #f8f8f8;
+.videodescription .title,
+.videodescription .subtitle,
+.videodescription .description {
+    text-align: left;
+    margin: 0px;
+    padding-left: 20px;
 }
 
-.team .title {
-    text-align: center;
+.team {
+    background-color: #f8f8f8;
 }
 
 .team .gallery {
@@ -69,18 +114,34 @@ img {
 
 .txtgallery {
     display: flex;
+    text-align: justify;
+}
+
+.imagecontainer .description {
+    margin: 10px;
+    text-align: jsutify;
+}
+
+.imagecontainer .picture {
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 20px;
 }
 
 .api_vagas .title {
     text-align: center;
+    padding-top: 30px;
 }
 
 .api_vagas .grouplist .title {
     text-align: left;
+    margin: 0px;
+    padding-bottom: 20px;
 }
 
 .listitem {
     display: flex;
+    padding-top: 10px;
 }
 
 .listitem .position {
@@ -89,6 +150,7 @@ img {
 
 .listitem .location {
     width: 50%;
+    justify-content: center;
     text-align: right;
 }
 

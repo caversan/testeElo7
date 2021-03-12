@@ -58,8 +58,7 @@ try {
         document.getElementsByClassName('header')[0].getElementsByClassName('banner')[0].innerHTML += '<img width="100%" src="img/' + data.header.imagem + '"\/>';
         document.getElementsByClassName('header')[0].getElementsByClassName('banner')[0].getElementsByClassName('pagetitle')[0].innerHTML += data.header.titulo;
         document.getElementsByClassName('header')[0].getElementsByClassName('description')[0].innerHTML += data.header.descricao;
-        document.getElementsByClassName('header')[0].getElementsByClassName('more')[0].innerHTML += data.header.mais.link;
-        document.getElementsByClassName('header')[0].getElementsByClassName('more')[0].innerHTML += data.header.mais.linkname;
+        document.getElementsByClassName('header')[0].getElementsByClassName('more')[0].innerHTML += '<a href="' + data.header.mais.link + '">' + data.header.mais.linkname + ' &#0187</a>';
     }
 
     function contentVideo(data) {
@@ -102,6 +101,7 @@ try {
             document.getElementsByClassName('aboutus')[0].getElementsByClassName('txtgallery')[0].getElementsByClassName('imagecontainer')[i].getElementsByClassName('description')[0].innerHTML += data.galeriatexto[i].descricao;
 
         }
+        document.getElementsByClassName('aboutus')[0].getElementsByClassName('more')[0].innerHTML += '<a href="' + data.mais.link + '">' + data.mais.linkname + ' &#0187</a>';
     }
 
     function contentVagas(data) {
@@ -150,7 +150,7 @@ try {
                         var position = document.createElement('position');
                         position.className = 'position';
                         document.getElementsByClassName('api_vagas')[0].getElementsByClassName('grouplist')[i].getElementsByClassName('list')[0].getElementsByClassName('listitem')[itemCounter].appendChild(position);
-                        document.getElementsByClassName('api_vagas')[0].getElementsByClassName('grouplist')[i].getElementsByClassName('list')[0].getElementsByClassName('listitem')[itemCounter].getElementsByClassName('position')[0].innerHTML += data.grupos[i].vagas[j].cargo;
+                        document.getElementsByClassName('api_vagas')[0].getElementsByClassName('grouplist')[i].getElementsByClassName('list')[0].getElementsByClassName('listitem')[itemCounter].getElementsByClassName('position')[0].innerHTML += '<a href="' + data.grupos[i].vagas[j].link + '">' + data.grupos[i].vagas[j].cargo + '</a>';
 
                         var location = document.createElement('location');
                         location.className = 'location';
