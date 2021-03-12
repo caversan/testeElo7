@@ -3,8 +3,8 @@ body {
     background: white;
     font-family: Cabin, Verdana, Arial, Helvetica, sans-serif;
     font-weight: 600;
+    font-size: clamp(1em, 1em + 1vw, 1.2em);
     line-height: 1.3;
-    font-size: 13px;
     letter-spacing: 1px;
     color: #7d7d7d;
     margin: 0px;
@@ -21,10 +21,14 @@ img {
     width: 100%;
 }
 
+.margincontent {
+    padding: 0px 10%;
+}
+
 .title {
     font-weight: 700;
-    font-size: 15px;
-    width: 220px;
+    font-size: clamp(1em, 1em + 1vw, 1.1em);
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -36,10 +40,9 @@ img {
 }
 
 .more {
-    padding-bottom: 20px;
     font-weight: 700;
-    font-size: 15px;
-    width: 200px;
+    font-size: clamp(1em, 1em + 1vw, 1.1em);
+    width: 220px;
     margin: 0 auto;
     text-align: center;
     border-top: 1px solid #7d7d7d;
@@ -84,11 +87,15 @@ img {
 
 .pagetitle {
     position: absolute;
+    font-size: clamp(5em, 5em + 5vw, 5.1em);
+    color: white;
+    font-weight: bolder;
     margin: 0px;
-    top: 50%;
+    top: 70%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 5px 12px black;
 }
 
 .videocontainer {
@@ -154,15 +161,75 @@ img {
     text-align: right;
 }
 
-@media screen and (min-width: 1380px) {
-    .margincontent {
-        padding: 0px 10%;
+@media screen and (max-width: 1279px) {
+    body {
+        font-size: clamp(2em, 2em + 2vw, 3.2em);
     }
-}
-
-@media screen and (max-width: 1035px) {
     .margincontent {
         padding: 0px 5%;
+    }
+    .twocol {
+        width: 100%;
+    }
+    .threecol {
+        width: 100%;
+    }
+    .teampic {
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .txtgallery {
+        display: block;
+        padding-top: 10%;
+    }
+    .subtitle {
+        padding-bottom: 25px;
+    }
+    .main {
+        padding-bottom: 25%;
+    }
+    .twocol {
+        padding: 35px 5px;
+    }
+    .threecol {
+        padding: 35px 5px;
+    }
+    .fourcol {
+        padding: 35px 5px;
+    }
+    .header .description,
+    .more {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    .more {
+        width: 85%;
+    }
+    .videocontainer {
+        display: block;
+        padding-bottom: 10%;
+    }
+    .videodescription .title,
+    .videodescription .subtitle,
+    .videodescription .description {
+        padding-left: 0px;
+    }
+    .imagecontainer .picture {
+        padding-bottom: 20%;
+    }
+    .api_vagas .title {
+        padding-top: 20%;
+    }
+    .listitem {
+        display: block;
+        padding-top: 2%;
+    }
+    .listitem .position {
+        width: 100%;
+    }
+    .listitem .location {
+        width: 100%;
+        text-align: left;
     }
 }
 

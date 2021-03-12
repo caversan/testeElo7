@@ -1,6 +1,8 @@
 try {
-    // Determinando o conteúdo que será carregado na página
-    //contentLoader(folder, json, type)
+    // Determinando o conteúdo que será carregado na página, dividi a página em módulos para poder
+    // reaproveitar elelmentos em outras páginas ou facilitar a criação de template em algum framework
+    // o conteudo ele tem um jsom e um tipo (exemplo galeria 3 colunas)
+    // contentLoader(folder, json, type)
     contentLoader('js/data/templates/', 'header', 'header');
     contentLoader('js/data/templates/', 'video', 'video');
     contentLoader('js/data/templates/', 'time', 'gallery');
@@ -13,7 +15,7 @@ try {
     function contentLoader(folder, json, type) {
         // Carregamento do json
         var loadedJson = new XMLHttpRequest();
-        loadedJson.open('GET', (folder + json + '?t=' + Math.floor(Math.random() * 1000000)), true);
+        loadedJson.open('GET', (folder + json + '.json?t=' + Math.floor(Math.random() * 1000000)), true);
         // Teste de integridade
         loadedJson.onreadystatechange = function() {
             if (this.readyState === 4) {
@@ -28,6 +30,8 @@ try {
         // Fim do Carregamento do json
     }
 
+    // aqui eu carrego o template e determino quais regras serão seguidas para 
+    // determinado conteúdo onde eu ja passo o json pelo argumento data
     function loadContent(data, type) {
         switch (type) {
             case 'header':
@@ -53,6 +57,9 @@ try {
                 break;
         }
     }
+
+
+    // As funções contentNnnnn() abaixo populam o html de forma dinâmica
 
     function contentHeader(data) {
         document.getElementsByClassName('header')[0].getElementsByClassName('banner')[0].innerHTML += '<img width="100%" src="img/' + data.header.imagem + '"\/>';
@@ -104,10 +111,13 @@ try {
         document.getElementsByClassName('aboutus')[0].getElementsByClassName('more')[0].innerHTML += '<a href="' + data.mais.link + '">' + data.mais.linkname + ' &#0187</a>';
     }
 
+    // Esta função é a que carrega a API de vagas
     function contentVagas(data) {
+
         document.getElementsByClassName('api_vagas')[0].getElementsByClassName('subbanner')[0].innerHTML += '<img src="img/' + data.lista.imagem + '"\/>';
         document.getElementsByClassName('api_vagas')[0].getElementsByClassName('title')[0].innerHTML += data.lista.titulo;
 
+        // Aqui eu não utilizo o contentLoader pois a API segue regras específicas de carregamento de Json
         var apiVagas = new XMLHttpRequest();
         apiVagas.open('GET', (data.lista.listasrc + '?t=' + Math.floor(Math.random() * 1000000)), true);
         // Teste de integridade
@@ -142,25 +152,26 @@ try {
                 for (j in data.grupos[i].vagas) {
 
 
+                    //aqui começam os testes para que a vaga seja publicada no site. São testados:
+                    // - Se está ativa,
+                    // - Se os dados da localização existem ou estão completos
                     if (data.grupos[i].vagas[j].ativa) {
                         var listitem = document.createElement('div');
                         listitem.className = 'listitem';
                         document.getElementsByClassName('api_vagas')[0].getElementsByClassName('grouplist')[i].getElementsByClassName('list')[0].appendChild(listitem);
 
-                        var position = document.createElement('position');
+                        var position = document.createElement('div');
                         position.className = 'position';
                         document.getElementsByClassName('api_vagas')[0].getElementsByClassName('grouplist')[i].getElementsByClassName('list')[0].getElementsByClassName('listitem')[itemCounter].appendChild(position);
                         document.getElementsByClassName('api_vagas')[0].getElementsByClassName('grouplist')[i].getElementsByClassName('list')[0].getElementsByClassName('listitem')[itemCounter].getElementsByClassName('position')[0].innerHTML += '<a href="' + data.grupos[i].vagas[j].link + '">' + data.grupos[i].vagas[j].cargo + '</a>';
 
-                        var location = document.createElement('location');
+                        var location = document.createElement('div');
                         location.className = 'location';
                         document.getElementsByClassName('api_vagas')[0].getElementsByClassName('grouplist')[i].getElementsByClassName('list')[0].getElementsByClassName('listitem')[itemCounter].appendChild(location);
                         document.getElementsByClassName('api_vagas')[0].getElementsByClassName('grouplist')[i].getElementsByClassName('list')[0].getElementsByClassName('listitem')[itemCounter].getElementsByClassName('location')[0].innerHTML += ((data.grupos[i].vagas[j].localizacao) ? (data.grupos[i].vagas[j].localizacao.bairro ? (data.grupos[i].vagas[j].localizacao.bairro + (data.grupos[i].vagas[j].localizacao.cidade || data.grupos[i].vagas[j].localizacao.pais ? ' - ' : '')) : '') + (data.grupos[i].vagas[j].localizacao.cidade ? (data.grupos[i].vagas[j].localizacao.cidade + (data.grupos[i].vagas[j].localizacao.pais ? ', ' : '')) : '') + (data.grupos[i].vagas[j].localizacao.pais ? (data.grupos[i].vagas[j].localizacao.pais) : '') : 'REMOTO');
 
                         itemCounter++;
                     }
-                    //document.getElementsByClassName('api_vagas')[0].innerHTML += data.grupos[i].vagas[j].link;
-
                 }
             }
         }
