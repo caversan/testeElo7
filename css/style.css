@@ -165,6 +165,9 @@ img {
     body {
         font-size: clamp(2em, 2em + 2vw, 3.2em);
     }
+    .pagetitle {
+        font-size: clamp(1.5em, 1.5em + 1.5vw, 3.1em);
+    }
     .margincontent {
         padding: 0px 5%;
     }
